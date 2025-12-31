@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color:rgb(43, 46, 91);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    padding-right: 70%;
+}
+
+#btn1{
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    color: white;
+    background: rgb(76, 88, 247);
+}
+
+#btn2{
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    color: white;
+    background: rgb(55, 224, 72);
+}
+
+h2{
+    text-align: center;
+    margin-top: 80px;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    background: rgb(43, 46, 91);
+    color: white;
+    width: 100%;
+}
