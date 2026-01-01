@@ -5,7 +5,7 @@
     </head>
 
     <body>
-        <img src="../Image/registration.jpg" class="setimg" alt="">
+        <img src="../uploads/registration.jpg" class="setimg" alt="">
         <form action="">
             <h1>Registration Form</h1>
             <label for="">Name:</label>

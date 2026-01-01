@@ -5,7 +5,7 @@
     </head>
 
     <body>
-        <img src="../Image/login.jpg" class="setimg" alt="">
+        <img src="../uploads/login.jpg" class="setimg" alt="">
         <form action="">
             <h1>User Login</h1>
      
