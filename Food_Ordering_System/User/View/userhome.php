@@ -1,5 +1,5 @@
 <?php
-include "../../Admin/DB/db.php";
+include "../DB/db.php";
 $result=mysqli_query($conn,"SELECT* FROM food");
 ?>
 
