@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "../DB/db.php";
 
 $error="";
@@ -39,12 +40,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
     else
     {
-        $hassPassword=password_hash($password,PASSWORD_DEFAULT);
  
-        $sql= "INSERT INTO users(name,address,mobile,email,password) VALUES ('$name','$address','$mobile','$email','$hassPassword')";
+        $sql= "INSERT INTO users(name,address,mobile,email,password) VALUES ('$name','$address','$mobile','$email','$password')";
         if($conn->query($sql))
         {
             $success="Registration Complete.";
+            header("Location: ../View/userlogin.php");
         }
  
         else
