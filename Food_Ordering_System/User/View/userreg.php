@@ -9,7 +9,7 @@
 
     <body>
         <img src="../uploads/registration.jpg" class="setimg" alt="">
-        <form action="">
+        <form method="post">
             <h1>Registration Form</h1>
             <label for="">Name:</label>
             <input type="text" placeholder="Enter Your Name" name="name" id="in">
@@ -18,7 +18,7 @@
             <input type="text" placeholder="Enter Your Adderss" name="address" id=in>
 
             <label for="">Mobile Number:</label>
-            <input type="tel" placeholder="Enter Mobile Number" name="number" id="in">
+            <input type="tel" placeholder="Enter Mobile Number" name="mobile" id="in">
 
             <label for="">Email:</label>
             <input type="email" placeholder="Enter Email Address" name="email" id="in">
@@ -32,5 +32,10 @@
 
             <a href="../View/userlogin.php" id="li">Already have an account?</a>
         </form>
+        <center>
+            <p style="color:green;"><?php echo $success; ?></p>
+            <p style="color:red;"><?php echo $error; ?></p>
+        </center>
+
     </body>
 </html>

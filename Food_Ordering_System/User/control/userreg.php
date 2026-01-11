@@ -17,14 +17,34 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $error="All field must be fill_up";
     }
+    elseif(!preg_match("/^[a-zA-Z ]*$/",$name))
+    {
+        $error ="Only letters and white space allowed";
+    }
+
+    elseif(!filter_var($email,FILTER_VALIDATE_EMAIL))
+        {
+            $error = "Invalid email format";
+        }
+    elseif(strlen($password)<6)
+        {
+            $error="Password must be at least 6 character.";
+        }
+
+        elseif ($password!=$cpassword) 
+        {
+            $error="Password and confirm password are not same.";
+        }
+
+
     else
     {
-        $hasspassword=password_hash($password,PASSWORD_DEFAULT);
+        $hassPassword=password_hash($password,PASSWORD_DEFAULT);
  
         $sql= "INSERT INTO users(name,address,mobile,email,password) VALUES ('$name','$address','$mobile','$email','$hassPassword')";
         if($conn->query($sql))
         {
-            $success="Registration Complete you can do the login";
+            $success="Registration Complete.";
         }
  
         else
