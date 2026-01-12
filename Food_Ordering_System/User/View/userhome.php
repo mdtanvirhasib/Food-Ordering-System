@@ -9,7 +9,7 @@ $result=mysqli_query($conn,"SELECT* FROM food");
         <title>
             Home
         </title>
-        <link rel="stylesheet" href="../Css/userhome.css">
+        <link rel="stylesheet" href="../Css/userhome.css?v=1">
     </head>
         <body>
             <h2>Food Menu</h2>
@@ -19,6 +19,7 @@ $result=mysqli_query($conn,"SELECT* FROM food");
                 <h3><?= $a['name']?></h3>
                 <p>TK<?= $a['price']?></p>
                 <input type="hidden" name="id" value="<?= $a['id']?>">
+                <input type="submit" value="Add to cart" class="sub">
 
 
             </form>
