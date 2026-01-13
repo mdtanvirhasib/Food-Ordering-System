@@ -1,3 +1,6 @@
+<?php include "../control/cart.php";?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,21 +8,32 @@
     </head>
     <body>
         <h2>My cart</h2>
-        <form action="">
+        <?php if(count($cart_items)>0):?>
+            <?php foreach($cart_items as $a):?>
+        <form class="viewfood">
                 <img src="../../Admin/uploads/<?=$a['image']?>" alt="">
                 <h3><?= $a['name']?></h3>
-                <p>TK<?= $a['price']?></p>
+                <p>TK<?= $a['price']?>x<?=$a['quantity']?></p>
+                <p>Total: TK<?= $a['price']*$a['quantity']?></p>
         </form>
+        <?php endforeach;?>
 
-        <p>Total: TK</p>
-        <p>Discount: </p>
-        <p>Payable: </p>
+        <p>Total: TK<?= $total ?></p>
+        <p>Discount: <?=$discount?>%</p>
+        <p>Payable: <?=$payable?></p>
 
+        <?php else:?>
+            <p>Your cart is empty.</p>
+            <?php endif;?>
+            <p class="msg"><?= $msg ?></p>
 
-        <form action="">
+        <form action="../control/cart.php" method="post" class="vaucher">
             <input type="text" name="code" placeholder="Enter Vaucher code">
             <button type="submit">Apply Vaucher</button>
-        </form>
+        </form><br>
+
+        <a href="../control/payment.php" class="btn">Proceed to Payment</a>
+        <a href="../View/userhome.php" class="btn">Back to Menu</a>
 
     </body>
 </html>
