@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
         if($q && mysqli_num_rows($q)>0)
             {
                 $food=mysqli_fetch_assoc($q);
-            }
+            
             $found = false;
             foreach ($_SESSION['cart'] as &$item) 
                 {
@@ -29,5 +29,15 @@ if($_SERVER['REQUEST_METHOD']=='POST')
                 }
                 unset($item);
 
+                if(!$found)
+                    {
+                        $_SESSION['cart'][] =['id' => $food['id'],'name' => $food['name'],'price' => $food['price'],'image' => $food['image'],'quantity' => 1];
+                    }
     }
+    header("Location: ../View/userhome.php");
+    exit;
+
+    }
+
+    
 ?>
