@@ -11,5 +11,15 @@
                 <p>TK<?= $a['price']?></p>
         </form>
 
+        <p>Total: TK</p>
+        <p>Discount: </p>
+        <p>Payable: </p>
+
+
+        <form action="">
+            <input type="text" name="code" placeholder="Enter Vaucher code">
+            <button type="submit">Apply Vaucher</button>
+        </form>
+
     </body>
 </html>
