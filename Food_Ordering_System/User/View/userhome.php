@@ -14,7 +14,7 @@ $result=mysqli_query($conn,"SELECT* FROM food");
         <body>
             <h2>Food Menu</h2>
             <?php while($a=mysqli_fetch_assoc($result)){?>
-            <form method="post" action="../control/addcart.php" class="viewfood">
+            <form method="post" action="../View/cart.php" class="viewfood">
                 <img src="../../Admin/uploads/<?=$a['image']?>" alt="">
                 <h3><?= $a['name']?></h3>
                 <p>TK<?= $a['price']?></p>

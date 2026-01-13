@@ -1,5 +1,7 @@
-<?php include "../control/cart.php";?>
+<?php
+include "../control/cart.php";
 
+?>
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +13,7 @@
         <?php if(count($cart_items)>0):?>
             <?php foreach($cart_items as $a):?>
         <form class="viewfood">
-                <img src="../../Admin/uploads/<?=$a['image']?>" alt="">
+                <img src="../../Admin/uploads/<?=$a['image']?>" alt="" width="80px">
                 <h3><?= $a['name']?></h3>
                 <p>TK<?= $a['price']?>x<?=$a['quantity']?></p>
                 <p>Total: TK<?= $a['price']*$a['quantity']?></p>
