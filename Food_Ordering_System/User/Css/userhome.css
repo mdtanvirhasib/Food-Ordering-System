@@ -1,7 +1,9 @@
 body{
-    display: flex;
-    flex-direction: column;
+
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 h2{
@@ -36,4 +38,16 @@ h2{
 .sub:hover{
     background: rgba(16, 78, 6, 0.9);
 }
+
+.cart{
+    background: rgba(31, 189, 0, 0.642);
+    color: azure;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+
 
