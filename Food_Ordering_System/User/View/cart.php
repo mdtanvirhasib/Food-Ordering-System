@@ -34,7 +34,7 @@ include "../control/cart.php";
             <button type="submit">Apply Vaucher</button>
         </form><br>
 
-        <a href="../control/payment.php" class="btn">Proceed to Payment</a>
+        <a href="../View/payment.php" class="btn">Proceed to Payment</a>
         <a href="../View/userhome.php" class="btn">Back to Menu</a>
 
     </body>
