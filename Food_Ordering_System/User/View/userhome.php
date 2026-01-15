@@ -13,6 +13,11 @@ $result=mysqli_query($conn,"SELECT* FROM food");
     </head>
         <body>
             <h2>Food Menu</h2>
+            <form action="" id="links">
+                <a href="../View/userhome.php">Home</a>
+                <a href="../View/cart.php">My cart</a>
+                <a href="../control/logout.php" class="logout">Logout</a>
+            </form>
             
             <?php while($a=mysqli_fetch_assoc($result)){?>
             <form method="post" action="../View/cart.php" class="viewfood">
@@ -28,9 +33,7 @@ $result=mysqli_query($conn,"SELECT* FROM food");
       
             <?php }?>
 
-            <header>
-                <a href="../View/cart.php" class="cart">View Cart</a>
-            </header>
+
 
             
             

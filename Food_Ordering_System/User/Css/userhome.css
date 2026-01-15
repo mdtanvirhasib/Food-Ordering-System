@@ -3,13 +3,61 @@ body{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    background: #f2f2f2;
+    margin: 0px;
+    padding-top: 80px;
 }
 
 h2{
     text-align: center;
     width: 100%;
 }
+
+
+#links{
+    width: 95%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px;
+    padding: 0px 20px;
+    z-index: 1000;
+
+}
+
+#links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+#links a:hover {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+
+#links a.logout {
+    margin-left: auto;
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#links a.logout:hover {
+    background-color: #ff1a1a;
+}
+
+
+
 .viewfood{
     width: 220px;
     margin: 20px;
@@ -48,6 +96,4 @@ h2{
     margin-left: 10px;
 
 }
-
-
 

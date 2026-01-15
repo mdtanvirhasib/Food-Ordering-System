@@ -2,7 +2,7 @@
 session_start();
 
 session_destroy();
-header("Location:userlogin.php");
+header("Location:../View/userlogin.php");
 exit();
 
 ?>
