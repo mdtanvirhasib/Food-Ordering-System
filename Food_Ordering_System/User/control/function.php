@@ -2,7 +2,6 @@
 include "../DB/db.php";
 function checkemail($conn,$email)
 {
-    $email = mysqli_real_escape_string($conn, $email);
 
     $sql="SELECT * FROM users WHERE email='$email'";
     $result=mysqli_query($conn,$sql);
