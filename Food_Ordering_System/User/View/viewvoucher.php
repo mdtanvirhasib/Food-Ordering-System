@@ -7,6 +7,7 @@ $result=mysqli_query($conn,"SELECT * FROM voucher");
 <html>
     <head>
         <title>My voucher</title>
+        <link rel="stylesheet" href="../Css/viewvoucher.css">
     </head>
     <body>
         <h2>Vouchers</h2>
