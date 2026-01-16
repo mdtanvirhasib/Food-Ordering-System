@@ -21,8 +21,8 @@ include "../control/profile.php";
             <label for="">Mobile: </label>
             <input type="text" name="mobile">
 
-            <input type="submit" value="update" name="update">
-            <input type="submit" value="delete" name="delete">
+            <input type="submit" value="update" name="update" class="update">
+            <input type="submit" value="delete" name="delete" class="delete">
         </form>
 
         <form action="">
