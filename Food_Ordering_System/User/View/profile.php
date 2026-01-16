@@ -11,6 +11,13 @@ include "../control/profile.php";
 
     <body>
         <h2>My profile</h2>
+            <form action="" id="links">
+                <a href="../View/userhome.php">Home</a>
+                <a href="../View/cart.php">My cart</a>
+                <a href="../View/viewvoucher.php">Voucher</a>
+                <a href="../View/profile.php">My profile</a>
+                <a href="../control/logout.php" class="logout">Logout</a>
+            </form>
         <form action="" method="post">
             <label for="">Name: </label>
             <input type="text" name="name">
