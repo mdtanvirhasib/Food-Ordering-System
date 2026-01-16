@@ -24,5 +24,11 @@ include "../control/profile.php";
             <input type="submit" value="update" name="update">
             <input type="submit" value="delete" name="delete">
         </form>
+
+        <form action="">
+            <p id="ajex"></p>
+            <button onclick="profileajex()">Load profile</button>
+        </form>
+        <script src="../js/profileajex.js"></script>
     </body>
 </html>

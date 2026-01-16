@@ -7,7 +7,6 @@ $success = "";
 $email=$_SESSION['email'];
 
 
-
 if (isset($_POST['update'])) 
     {
         $name = $_POST['name'];
