@@ -7,6 +7,7 @@ include "../control/cart.php";
 <html>
     <head>
         <title>My cart</title>
+        <link rel="stylesheet" href="../Css/cart.css">
         <script>
             function payment()
             {
