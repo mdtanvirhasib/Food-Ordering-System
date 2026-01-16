@@ -46,6 +46,7 @@ include "../control/cart.php";
                 <a href="../View/userhome.php">Home</a>
                 <a href="../View/cart.php">My cart</a>
                 <a href="../View/viewvoucher.php">Voucher</a>
+                <a href="../View/profile.php">My profile</a>
                 <a href="../control/logout.php" class="logout">Logout</a>
             </form>
 

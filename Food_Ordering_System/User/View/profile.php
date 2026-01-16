@@ -18,7 +18,7 @@ include "../control/profile.php";
                 <a href="../View/profile.php">My profile</a>
                 <a href="../control/logout.php" class="logout">Logout</a>
             </form>
-        <form action="" method="post">
+        <form action="" method="post" class="form">
             <label for="">Name: </label>
             <input type="text" name="name">
 
@@ -32,7 +32,7 @@ include "../control/profile.php";
             <input type="submit" value="delete" name="delete" class="delete">
         </form>
 
-        <form action="">
+        <form action="" class="form">
             <p id="ajex"></p>
             
         </form>
