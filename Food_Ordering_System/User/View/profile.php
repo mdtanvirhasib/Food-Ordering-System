@@ -1,3 +1,7 @@
+<?php
+include "../control/profile.php";
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
