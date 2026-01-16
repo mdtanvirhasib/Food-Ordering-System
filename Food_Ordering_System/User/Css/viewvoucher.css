@@ -1,7 +1,7 @@
 body{
     background-color: rgb(180, 180, 180);
     margin: 0;
-    padding: 20px;
+    padding: 100px 20px;
 }
 
 h2{
@@ -9,7 +9,7 @@ h2{
     font:bold;
     margin-bottom: 30px;
 }
-form{
+form.vaucher{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     margin-bottom: 20px;
@@ -18,8 +18,52 @@ form{
     margin-left: auto;
     margin-right: auto;
 }
-p{
+p.vaucher{
     font-weight: bold;
     font-size: 18px;
 
 }
+
+
+#links{
+    width: 95%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px;
+    padding: 0px 20px;
+    z-index: 1000;
+
+}
+
+#links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+#links a:hover {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+
+#links a.logout {
+    margin-left: auto;
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#links a.logout:hover {
+    background-color: #ff1a1a;
+}
+
+
