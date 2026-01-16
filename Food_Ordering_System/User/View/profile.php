@@ -27,8 +27,9 @@ include "../control/profile.php";
 
         <form action="">
             <p id="ajex"></p>
-            <button onclick="profileajex()">Load profile</button>
+            
         </form>
+        <button onclick="profileajex()">Load profile</button>
         <script src="../js/profileajex.js"></script>
     </body>
 </html>
