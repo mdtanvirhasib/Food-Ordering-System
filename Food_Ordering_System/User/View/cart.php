@@ -7,6 +7,12 @@ include "../control/cart.php";
 <html>
     <head>
         <title>My cart</title>
+        <script>
+            function payment()
+            {
+                alert("Are you proceeding for payment?");
+            }
+        </script>
     </head>
     <body>
         <h2>My cart</h2>
@@ -34,7 +40,7 @@ include "../control/cart.php";
             <button type="submit">Apply Vaucher</button>
         </form><br>
 
-        <a href="../View/payment.php" class="btn">Proceed to Payment</a>
+        <a href="../View/payment.php" class="btn" onclick="payment()">Proceed to Payment</a>
         <a href="../View/userhome.php" class="btn">Back to Menu</a>
 
     </body>
