@@ -16,5 +16,57 @@ h2 {
     border-radius: 8px;
     display: flex;
     align-items: center;
+    gap: 15px;
 
+}
+
+.viewfood h3 {
+    font-size: 15px;
+    flex: auto;
+}
+
+p {
+    margin: 8px;
+}
+
+.vaucher {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.vaucher input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+
+.vaucher button {
+    padding: 8px;
+    border: none;
+    background-color: rgb(40, 167, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.vaucher button:hover {
+    background-color: rgb(33, 136, 56);
+}
+
+.btn {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    background-color: rgb(0, 86, 179);
 }
