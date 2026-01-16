@@ -42,7 +42,12 @@ include "../control/cart.php";
         </form><br>
 
         <a href="../View/payment.php" class="btn" onclick="payment()">Proceed to Payment</a>
-        <a href="../View/userhome.php" class="btn">Back to Menu</a>
+                    <form action="" id="links">
+                <a href="../View/userhome.php">Home</a>
+                <a href="../View/cart.php">My cart</a>
+                <a href="../View/viewvoucher.php">Voucher</a>
+                <a href="../control/logout.php" class="logout">Logout</a>
+            </form>
 
     </body>
 </html>

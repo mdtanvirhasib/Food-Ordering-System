@@ -17,5 +17,11 @@ $result=mysqli_query($conn,"SELECT * FROM voucher");
             <p>Discount: <?= $a['discount']?>%</p>
         </form>
         <?php }?>
+                    <form action="" id="links">
+                <a href="../View/userhome.php">Home</a>
+                <a href="../View/cart.php">My cart</a>
+                <a href="../View/viewvoucher.php">Voucher</a>
+                <a href="../control/logout.php" class="logout">Logout</a>
+            </form>
     </body>
 </html>
