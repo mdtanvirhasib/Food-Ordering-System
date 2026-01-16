@@ -1,10 +1,13 @@
-<?php include "../control/userreg.php";?>
+<?php include "../control/userreg.php";
+include_once "../control/function.php";
+?>
 
 
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="../Css/userreg.css">
+
     </head>
 
     <body>
@@ -21,7 +24,8 @@
             <input type="tel" placeholder="Enter Mobile Number" name="mobile" id="in">
 
             <label for="">Email:</label>
-            <input type="email" placeholder="Enter Email Address" name="email" id="in">
+            <input type="email" placeholder="Enter Email Address" name="email" id="in" onclick="ajexforemail()">
+
 
             <label for="">Password:</label>
             <input type="password" placeholder="Enter Password" name="password" id="in">
