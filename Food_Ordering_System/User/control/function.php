@@ -1,9 +1,9 @@
 <?php
 include "../DB/db.php";
-function checkemail()
+function checkemail($conn,$email)
 {
     $sql="SELECT * FROM users WHERE email='$email'";
-    $result=mysqli_query($sql);
+    $result=mysqli_query($conn,$sql);
     return mysqli_num_rows($result)>0;
 }
 
