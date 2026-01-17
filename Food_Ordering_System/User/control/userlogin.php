@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 
         else
             {
-                $sql="SELECT * FROM users where email='$email' and password ='$password'";
+                $sql="SELECT * FROM users where email='$email' and password ='$password' and role='customer'";
 
                 $res=$conn->query($sql);
 

@@ -49,7 +49,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     else
     {
  
-        $sql= "INSERT INTO users(name,address,mobile,email,password) VALUES ('$name','$address','$mobile','$email','$password')";
+        $sql= "INSERT INTO users(name,address,mobile,email,password,role) VALUES ('$name','$address','$mobile','$email','$password','customer')";
         if($conn->query($sql))
         {
             $success="Registration Complete.";
