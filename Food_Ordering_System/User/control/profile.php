@@ -6,6 +6,10 @@ $error = "";
 $success = "";
 $email=$_SESSION['email'];
 
+$sql = "SELECT * FROM users WHERE email='$email'";
+$res = mysqli_query($conn, $sql);
+$user = mysqli_fetch_assoc($res);
+
 
 if (isset($_POST['update'])) 
     {

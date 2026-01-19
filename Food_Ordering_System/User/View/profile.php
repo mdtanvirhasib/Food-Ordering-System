@@ -20,13 +20,13 @@ include "../control/profile.php";
             </form>
         <form action="" method="post" class="form">
             <label for="">Name: </label>
-            <input type="text" name="name">
+            <input type="text" name="name" value="<?= $user['name'] ?>">
 
             <label for="">Address: </label>
-            <input type="text" name="address">
+            <input type="text" name="address" value="<?= $user['address'] ?>">
 
             <label for="">Mobile: </label>
-            <input type="text" name="mobile">
+            <input type="text" name="mobile" value="<?= $user['mobile'] ?>">
 
             <input type="submit" value="update" name="update" class="update">
             <input type="submit" value="delete" name="delete" class="delete">
