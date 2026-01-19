@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     {
         $email=$_POST['email'];
         $password=$_POST['password'];
-    }
+    
 
     if(empty($email)||empty($password))
         {
@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 
         else
             {
-                $sql="SELECT * FROM users where email='$email' and password ='$password' and role='customer'";
+                $sql="SELECT * FROM users where email='$email' and password ='$password'";
 
                 $res=$conn->query($sql);
 
@@ -26,15 +26,27 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 
                         $_SESSION['user']=$user['id'];
                         $_SESSION['email'] = $user['email'];
+                        $_SESSION['role']=$user['role'];
 
-                        header("Location: ../View/userhome.php");
-                        exit;
+                        if($user['role']=='customer')
+                            {
+                                header("Location: ../View/userhome.php");
+                                exit;   
+                            }
+
+                            elseif($user['role']=='admin')
+                                {
+                                    header("Location: ../../Admin/View/adminhome.php");                      
+                                }
+
+                        
                     }
                     else
                         {
                             $error = "Invalid Email or Password";
                         }
 
+            }
             }
 
 ?>
